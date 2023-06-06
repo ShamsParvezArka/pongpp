@@ -7,7 +7,7 @@ A failed attempt to rewrite the original 1972 pong game in pure C.
 ![](assets/preview.gif)
 
 ## ⚡ **Requirements**
-* [gcc](https://gcc.gnu.org/)
+* [g++](https://gcc.gnu.org/)
 * [Raylib](https://www.raylib.com/)
 
 ## 📦 **Setup**
