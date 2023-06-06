@@ -136,7 +136,7 @@ int main()
 
 			if (game_state == 0) {
 				DrawText("PONG++", screen_width/2 - 165, screen_height/2 - 60, 100, YELLOW);
-				DrawText("left click to start", screen_width/2 - 165, screen_height/2 + 30, 30, GRAY);
+				draw::blinking_text("left click to start", screen_width/2 - 165, screen_height/2 + 30, 30, GRAY);
 				DrawRectangleRec(wball1, WHITE);
 				DrawRectangleRec(wball2, WHITE);
 			}
