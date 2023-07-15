@@ -23,10 +23,9 @@ short game_state = 0;
 
 short p1_score = 0;
 short p2_score = 0;
-
 int tick = 0;
 
-int main()
+int main(void)
 {
 	// INITIALIZATION
 	InitWindow(screen_width, screen_height, "pong++");
@@ -123,7 +122,7 @@ int main()
 			ball.y += ball_speed.y;
 		}
 
-		if (p1_score == 3 || p2_score == 3) {
+		if (p1_score == 10 || p2_score == 10) {
 			game_state = 3;
 			if (IsSoundPlaying(win) == false)
 				PlaySound(win);
@@ -159,11 +158,11 @@ int main()
 			}
 
 			if (game_state == 3) {
-				if (p1_score == 3) {
+				if (p1_score == 10) {
 					DrawText(TextFormat("%d", p1_score), screen_width/2 - 95, screen_height/2 - 30, 80, GREEN);
 					DrawText(TextFormat("%d", p2_score), screen_width/2 + 60, screen_height/2 - 30, 80, GRAY);
 				}
-				if (p2_score == 3) {
+				if (p2_score == 10) {
 					DrawText(TextFormat("%d", p1_score), screen_width/2 - 95, screen_height/2 - 30, 80, GRAY);
 					DrawText(TextFormat("%d", p2_score), screen_width/2 + 60, screen_height/2 - 30, 80, GREEN);
 				}

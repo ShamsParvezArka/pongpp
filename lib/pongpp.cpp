@@ -8,13 +8,10 @@ void control_paddle(Rectangle &paddle1, Rectangle &paddle2)
 {
 	if (IsKeyDown(KEY_S) && (paddle1.y + paddle1.height) <= screen_height)
 		paddle1.y += paddle_speed;
-
 	if (IsKeyDown(KEY_W) && paddle1.y >= 0)
 		paddle1.y -= paddle_speed;
-
 	if (IsKeyDown(KEY_DOWN) && (paddle2.y + paddle2.height) <= screen_height)
 		paddle2.y += paddle_speed;
-
 	if (IsKeyDown(KEY_UP) && (paddle2.y >= 0)) 
 		paddle2.y -= paddle_speed;
 }

@@ -1,5 +1,5 @@
-CXX = g++
-CFLAGS = -std=c++2a -Wall -Wextra -Wshadow -Wswitch-default -Wconversion -Wunreachable-code  
+CXX = clang++-15
+CFLAGS = -std=c++2a -Wall -Wextra -Werror -Wshadow -Wswitch-default -Wconversion -Wunreachable-code  
 CLIBS = -lraylib -lGL -lpthread -ldl -lrt -lX11 -lm
 
 output: main.cpp
