@@ -22,3 +22,7 @@ A failed attempt to rewrite the original 1972 pong game in pure C.
 	> here, `Makefile` will compile the source code and create an executable
 
 *  Fire your game by running the `pong` executable.
+
+## **Usage**
+* Use `W` `S` to control the left paddle
+* Use `ArrowUp` `ArrowDown` to control the right paddle
